@@ -1,0 +1,120 @@
+Equipments
+{
+        "id": 1,
+        "title": "test 1",
+        "mutliUnits": false,
+        "perBooking": false,
+        "price": 600
+}
+
+food_drinks
+{
+        "id": 2,
+        "title": "test 2 edited",
+        "price": 1000
+}
+
+Layouts
+{
+        "id": 1,
+        "title": "circular",
+        "imagePath": null,
+        "rooms": [
+            {
+                "id": 1,
+                "title": "Discussion Room",
+                "pricePerDay": 1000,
+                "pricePerHour": 0,
+                "pricePerHalfDay": 600,
+                "imagePath": null,
+                "capacity": 5,
+                "description": "Small room for discussions.",
+                "active": true,
+                "noOfBookings": 0
+            },
+            {
+                "id": 5,
+                "title": "Discussion Room 2",
+                "pricePerDay": 1000,
+                "pricePerHour": 0,
+                "pricePerHalfDay": 600,
+                "imagePath": null,
+                "capacity": 5,
+                "description": "Small room for discussions.",
+                "active": true,
+                "noOfBookings": 0
+            }
+        ]
+}
+
+Rooms
+{
+        "id": 1,
+        "title": "Discussion Room",
+        "pricePerDay": 1000,
+        "pricePerHour": 0,
+        "pricePerHalfDay": 600,
+        "imagePath": null,
+        "capacity": 5,
+        "description": "Small room for discussions.",
+        "active": true,
+        "noOfBookings": 0,
+        "layouts": [
+            {
+                "id": 1,
+                "title": "circular",
+                "imagePath": null
+            }
+        ]
+}
+
+Booking
+{
+	"id": 8,
+	"start_date": "2014-05-15",
+	"end_date": "2014-05-15",
+	"attendees": 25,
+	"room": {
+		"id": 19,
+		"title": "Presentation Room",
+		"pricePerDay": 1500,
+		"pricePerHour": 200,
+		"pricePerHalfDay": 700,
+		"imagePath": null,
+		"capacity": 35,
+		"description": "huge room for presentations",
+		"active": true,
+		"noOfBookings": 1
+	},
+	"layout": {
+		"id": 5,
+		"title": "circular",
+		"image_path": null
+	},
+	"duration": 2,
+	"hourSlot": null,
+	"status": 1,
+	"paymentMethod": 1,
+	"client": {
+		"id": 1,
+		"title": "miss",
+		"name": "aarushi",
+		"email": "a@gmail.com",
+		"phone": "9999999999",
+		"notes": "efvrgrtv4t",
+		"company": "airtel",
+		"city": "noida",
+		"state": "up",
+		"zip": 201014,
+		"country": "india",
+		"address": "abhyas"
+	},
+	"equipmentItem": [],
+	"foodDrinkItem": [],
+	"subTotal": 1550,
+	"tax": 0,
+	"total": 1550,
+	"deposit": 500
+}
+
+

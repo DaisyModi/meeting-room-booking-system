@@ -1,0 +1,11 @@
+export { addNewUser } from './addNewUser';
+export { toggleUser } from './toggleUser';
+// export { removeClosed } from './removeClosed';
+export { loadUser } from './loadUser';
+export {deleteSelectedUsers} from './deleteSelectedUsers';
+export {selectUser} from './selectUser';
+export {changeUser} from './changeUser';
+export {deleteUser} from './deleteUser';
+export {submitUser} from './submitUser';
+export {activeUsers} from './loadActiveUsers';
+export {inactiveUsers} from './loadInactiveUsers';
