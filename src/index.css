@@ -1,0 +1,121 @@
+
+
+body{
+	margin-left: 50px;
+}
+section{
+	margin-bottom: 10px;
+}
+.stats, .bugname{
+	font-size: 18pt;
+}
+.inactive{
+	color : red;
+	font-weight: bold;
+}
+
+.active{
+	color : green;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.confirmed{
+	color : green;
+	font-weight: bold;
+}
+
+
+.pending{
+	color : orange;
+	font-weight: bold;
+}
+
+.cancelled{
+	color : red;
+	font-weight: bold;
+}
+
+
+.datetime{
+	font-style: italic;
+}
+ol{
+	width: 500px;
+	list-style: none;
+	-webkit-padding-start : 0px;
+}
+li{
+	border : 2px solid gray;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: #e7e7e7;
+}
+
+
+.title{
+	display: block;
+    float: left;
+    padding: 6px 0 0;
+    width: 150px;
+}
+.leftmenu-middle{
+	
+	overflow: hidden;
+	width: 240px;
+}
+
+.menu{
+	list-style: none;
+    margin: 9px auto;
+    overflow: hidden;
+    width: 199px;
+}
+
+#middle {
+    padding: 25px 0 60px;
+    margin: 0 auto;
+	width: 1040px;
+}
+
+#leftmenu {
+    float: left;
+    width: 240px;
+}
+
+#right {
+    float: right;
+    width: 782px;
+}
+
+#header {
+    height: 118px;
+    position: relative;
+	margin: 0 auto;
+		margin-top: 0px;
+		margin-right: auto;
+		margin-bottom: 0px;
+		margin-left: auto;
+    width: 1040px;
+}
+
+#container {
+    min-height: 100%;
+    width: 100%;
+}
+
+#logo {
+    display: block;
+    width: 552px;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    height: 118px;
+    line-height: 124px;
+    font-size: 30px;
+    font-weight: 900;
+    text-shadow: rgb(224, 224, 224) 1px 1px 0px;
+}
