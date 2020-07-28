@@ -1,0 +1,207 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Panoramic Room-2",
+      "capacity": 4,
+      "bookings": 2,
+      "status": "Active"
+    },
+    {
+      "id": 2,
+      "name": "room 2",
+      "capacity": "12",
+      "bookings": "13",
+      "status": "Active"
+    },
+    {
+      "id": 3,
+      "name": "wfff",
+      "capacity": "dvdvv",
+      "bookings": "",
+      "status": "Active"
+    },
+    {
+      "id": 4,
+      "name": "",
+      "capacity": "",
+      "bookings": "",
+      "status": "Active"
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "roomName": "room 2",
+      "start_date": "2019-07-17",
+      "end_date": "2019-07-18",
+      "subTotal": 98,
+      "status": "Confirmed",
+      "attendees": "23",
+      "paymentMethod": "Wire Transfer",
+      "layoutName": "layout - 3",
+      "client": {
+        "name": "jatin",
+        "title": "Mr.",
+        "email": "jatin@gmail.com",
+        "phone": "7906924340",
+        "notes": "notes ",
+        "company": "Adobe",
+        "address": "Noida",
+        "city": "Noida",
+        "state": "Uttar Pradesh",
+        "zip": "251001",
+        "country": "India"
+      }
+    },
+    {
+      "id": 2,
+      "roomName": "",
+      "start_date": "",
+      "end_date": "",
+      "subTotal": "",
+      "status": "Pending",
+      "attendees": "",
+      "paymentMethod": "Cash",
+      "layoutName": "",
+      "client": {
+        "name": "jatin",
+        "title": "Ms.",
+        "email": "",
+        "phone": "",
+        "notes": "",
+        "company": "",
+        "address": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "country": ""
+      }
+    },
+    {
+      "id": 3,
+      "roomName": "",
+      "start_date": "",
+      "end_date": "",
+      "subTotal": "",
+      "status": "Pending",
+      "attendees": "",
+      "paymentMethod": "Cash",
+      "layoutName": "",
+      "client": {
+        "name": "jatin",
+        "title": "Ms.",
+        "email": "",
+        "phone": "",
+        "notes": "",
+        "company": "",
+        "address": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "country": ""
+      }
+    },
+    {
+      "id": 4,
+      "roomName": "wfff",
+      "start_date": "2019-07-03",
+      "end_date": "2019-07-24",
+      "subTotal": 34,
+      "status": "Pending",
+      "attendees": "12",
+      "paymentMethod": "Cash",
+      "layoutName": "layout - 3",
+      "client": {
+        "name": "jatin",
+        "title": "Mr.",
+        "email": "qq",
+        "phone": "q",
+        "notes": "q",
+        "company": "q",
+        "address": "q",
+        "city": "q",
+        "state": "q",
+        "zip": "q",
+        "country": "q"
+      }
+    }
+  ],
+  "layouts": [
+    {
+      "id": 1,
+      "title": "layout - 1"
+    },
+    {
+      "id": 2,
+      "title": "layout - 2"
+    },
+    {
+      "id": 3,
+      "title": "layout - 3"
+    },
+    {
+      "id": 4,
+      "title": "layout - 6"
+    },
+    {
+      "id": 5,
+      "title": "Layout - 8 "
+    },
+    {
+      "id": 6,
+      "title": " layout -9"
+    }
+  ],
+  "equipments": [
+    {
+      "id": 1,
+      "title": "equipment-1",
+      "bookMultiUnits": true,
+      "price": 12,
+      "isSelected": false
+    },
+    {
+      "id": 2,
+      "title": "equipment-2",
+      "bookMultiUnits": true,
+      "price": 22,
+      "isSelected": false
+    },
+    {
+      "id": 3,
+      "title": "equipment-3",
+      "bookMultiUnits": true,
+      "price": 42,
+      "isSelected": false
+    },
+    {
+      "id": 4,
+      "title": "jebh",
+      "bookMultiUnits": true,
+      "price": 10,
+      "isSelected": true
+    },
+    {
+      "id": 5,
+      "title": "cc",
+      "bookMultiUnits": true,
+      "price": 12,
+      "isSelected": false
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "role": "admin",
+      "email": "admin@admin.com",
+      "password": "admin",
+      "name": "Administrator",
+      "phone": 123456789,
+      "status": true,
+      "isSelected": false,
+      "createdAt": "2019-07-16T11:25:08.329Z"
+    }
+  ],
+  "food": []
+}

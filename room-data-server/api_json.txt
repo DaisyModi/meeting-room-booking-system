@@ -1,0 +1,204 @@
+API
+ 
+ROOMS
+ 
+{
+        "id": 23,
+        "title": "Presentation Room",
+        "pricePerDay": 1500,
+        "pricePerHour": 200,
+        "pricePerHalfDay": 700,
+        "imagePath": null,
+        "capacity": 35,
+        "description": "huge room for presentations",
+        "active": true,
+        "noOfBookings": 1,
+        "layouts": [
+            {
+                "id": 5,
+                "title": "circular",
+                "image_path": null
+            }
+        ]
+}
+ 
+getRoom()
+GET http://localhost:8080/api/rooms?id=1 
+getNextPage()
+GET http://localhost:8080/api/rooms?pageNumber=1 
+addRoom()
+POST http://localhost:8080/api/rooms 
+updateRoom()
+PUT http://localhost:8080/api/rooms/id 
+deleteRoom()
+DELETE http://localhost:8080/api/rooms/id 
+ 
+LAYOUTS
+ 
+{
+        "id": 1,
+        "title": "circular",
+        "image_path": null,
+        "rooms": [
+            {
+                "id": 2,
+                "title": "Discussion Room",
+                "pricePerDay": 1000,
+                "pricePerHour": 0,
+                "pricePerHalfDay": 600,
+                "imagePath": null,
+                "capacity": 5,
+                "description": "Small room for discussions.",
+                "active": true,
+                "noOfBookings": 0
+            }
+        ]
+    }
+ 
+GET http://localhost:8080/api/layouts?id=1 
+GET http://localhost:8080/api/layouts?pageNumber=1 
+POST http://localhost:8080/api/layouts 
+PUT http://localhost:8080/api/layouts/id 
+DELETE http://localhost:8080/api/layouts/id
+ 
+EQUIPMENTS
+{
+        "id": 1,
+        "title": "Projector",
+        "mutliUnits": false,
+        "perBooking": true,
+        "price": 100
+    }
+GET http://localhost:8080/api/equipments?id=1 
+GET http://localhost:8080/api/equipments?pageNumber=1 
+POST http://localhost:8080/api/equipments 
+PUT http://localhost:8080/api/equipments/id 
+DELETE http://localhost:8080/api/equipments/id
+ 
+FOODDRINKS    
+{
+        "id": 1,
+        "title": "samosa",
+        "price": 10
+    }
+GET http://localhost:8080/api/food_drinks?id=1 
+GET http://localhost:8080/api/food_drinks?pageNumber=1 
+POST http://localhost:8080/api/food_drinks 
+PUT http://localhost:8080/api/food_drinks/id 
+DELETE http://localhost:8080/api/food_drinks/id
+ 
+USERS 
+{
+    "username": "a@gmail.com",
+    "password": "abc123",
+    "firstname": "aarushi",
+    "lastname": "gupta",
+    "address": "Pitampura",
+    "phone": "9966996699"
+}
+GET http://localhost:8080/api/users?id=1
+GET http://localhost:8080/api/users?pageNumber=1 
+POST http://localhost:8080/api/users
+PUT http://localhost:8080/api/users/id 
+DELETE http://localhost:8080/api/users/id
+ 
+LOGIN
+ 
+GET http://localhost:8080/api/logins
+{
+        "username": "a@gmail.com",
+        "password": "abc123",
+        "timestamp": "2019-07-16 at 14:49:05 IST",
+        "user": {
+            "username": "a@gmail.com",
+            "password": "abc123",
+            "firstname": "aarushi",
+            "lastname": "gupta",
+            "address": "Pitampura",
+            "phone": "9966996699"
+        }
+    }
+POST http://localhost:8080/api/login
+{
+       "username" : "a@gmail.com",
+       "password" : "abc123"
+}
+ 
+BOOKINGS
+{
+        "id": 3,
+        "start_date": "2010-02-10",
+        "end_date": "2010-02-10",
+        "attendees": 5,
+        "room": {
+            "id": 2,
+            "title": "Discussion Room",
+            "pricePerDay": 1000,
+            "pricePerHour": 0, // if hourly can not be booked, then price per hour is NULL.
+            "pricePerHalfDay": 600,
+            "imagePath": null,
+            "capacity": 5,
+            "description": "Small room for discussions.",
+            "active": true,
+            "noOfBookings": 0
+        },
+        "layout": {
+            "id": 1,
+            "title": "circular",
+            "image_path": null
+        },
+        "duration": 0, //{0-hourly, 1-half day morning, 2-half day evening, 3-fullday}
+        "hourSlot": 1, {0-7}
+        "status": 110, // 0,1,2
+        "paymentMethod": 1, // 0-4
+        "client": {
+            "id": 1,
+            "title": "miss",
+            "name": "aarushi",
+            "email": "a@gmail.com",
+            "phone": "9999999999",
+            "notes": "efvrgrtv4t",
+            "company": "airtel",
+            "city": "noida",
+            "state": "up",
+            "zip": 201014,
+            "country": "india",
+            "address": "abhyas"
+        },
+        "equipmentItem": [
+            {
+                "id": 2,
+                "qty": 1,
+                "equipment": {
+                    "id": 1,
+                    "title": "Projector",
+                    "mutliUnits": false,
+                    "perBooking": true,
+                    "price": 100
+                },
+                "amount": 100
+            }
+        ],
+        "foodDrinkItem": [
+            {
+                "id": 2,
+                "qty": 5,
+                "foodDrink": {
+                    "id": 1,
+                    "title": "samosa",
+                    "price": 10
+                },
+                "amount": 50
+            }
+        ],
+        "subTotal": 0,
+        "tax": 0,
+        "total": 0,
+        "deposit": 0
+    }
+ 
+GET http://localhost:8080/api/bookings
+GET http://localhost:8080/api/bookings/1 
+POST http://localhost:8080/api/bookings
+DELETE http://localhost:8080/api/layouts/id
+ 
